@@ -25,11 +25,12 @@ app.get("/reservas", (req, res) => {
 });
 
 app.post("/reserva", (req, res) => {
-  const { assentos, name, cpf, email, valor } = req.body;
+  const { assentos, idassentos, name, cpf, email, valor } = req.body;
 
   const newReserva = {
     id: Math.random().toString(36),
     assentos,
+    idassentos,
     name,
     cpf,
     email,
