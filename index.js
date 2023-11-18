@@ -20,11 +20,11 @@ app.get("/assentos", (req, res) => {
   return res.json(assentos);
 });
 
-app.get("/reserva", (req, res) => {
-  return res.json(reserva);
+app.get("/reservas", (req, res) => {
+  return res.json(reservas);
 });
 
-app.post("/reservas", (req, res) => {
+app.post("/reserva", (req, res) => {
   const { assentos, name, cpf, email, valor } = req.body;
 
   const newReserva = {
