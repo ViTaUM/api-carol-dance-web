@@ -20,6 +20,10 @@ app.get("/assentos", (req, res) => {
   return res.json(assentos);
 });
 
+app.get("/reserva", (req, res) => {
+  return res.json(reserva);
+});
+
 app.post("/reservas", (req, res) => {
   const { assentos, name, cpf, email, valor } = req.body;
 
