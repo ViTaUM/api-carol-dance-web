@@ -35,7 +35,7 @@ app.post("/reserva", (req, res) => {
     cpf,
     email,
     valor,
-    status: 'pendente',
+    status: "pendente",
   };
 
   reservas.push(newReserva);
@@ -57,6 +57,35 @@ app.put("/reservas/:id/pagar", (req, res) => {
   reserva.status = "pago";
 
   return res.json(reserva);
+});
+
+// Rota para atualizar o status da reserva de "pendente" para "pago"
+app.put("/assentos/:id/false", (req, res) => {
+  const { id } = req.params;
+
+  // Converta o 'id' da rota para número
+  const seatId = parseInt(id);
+
+  // Encontre o assento correspondente pelo ID em todos os arrays
+  let assentoEncontrado = null;
+
+  for (const arrayDeAssentos of assentos) {
+    const assento = arrayDeAssentos.find((r) => r.id === seatId);
+
+    if (assento) {
+      assentoEncontrado = assento;
+      break;
+    }
+  }
+
+  if (!assentoEncontrado) {
+    return res.status(404).json({ error: "Assento não encontrado" });
+  }
+
+  // Atualize o isAvailable para "false"
+  assentoEncontrado.isAvailable = false;
+
+  return res.json(assentoEncontrado);
 });
 
 app.delete("/reservas/:id", (req, res) => {
