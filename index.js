@@ -43,7 +43,7 @@ app.post("/reserva", (req, res) => {
 });
 
 // Rota para atualizar o status da reserva de "pendente" para "pago"
-app.put("/reservas/:id/pagar", (req, res) => {
+app.put("/reservas/pagar/:id", (req, res) => {
   const { id } = req.params;
 
   // Encontre a reserva correspondente pelo ID
