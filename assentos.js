@@ -224,7 +224,7 @@ const assentos = [
     { id: 181, name: "H21", isAvailable: true, valor: 30.0 },
     { id: 182, name: "H22", isAvailable: true, valor: 30.0 },
     { id: 183, name: "H23", isAvailable: true, valor: 30.0 },
-    { id: 184, name: "H24", isAvailable: true, valor: 0 },
+    { id: 184, name: "H24", isAvailable: true, valor: 30.0 },
   ],
 
   [
