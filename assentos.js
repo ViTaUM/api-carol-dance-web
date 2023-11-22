@@ -139,7 +139,6 @@ const assentos = [
     { id: 113, name: "E21", isAvailable: true, valor: 0 },
     { id: 114, name: "E22", isAvailable: true, valor: 0 },
   ],
-
   [
     { id: 0, name: "F", isAvailable: false, valor: null },
     { id: 1, name: "F", isAvailable: false, valor: null },
@@ -168,7 +167,6 @@ const assentos = [
     { id: 137, name: "F23", isAvailable: true, valor: 0 },
     { id: 138, name: "F24", isAvailable: true, valor: 0 },
   ],
-
   [
     { id: 0, name: "G", isAvailable: false, valor: null },
     { id: 0, name: "X", isAvailable: false, valor: null },
@@ -197,7 +195,6 @@ const assentos = [
     { id: 159, name: "G21", isAvailable: true, valor: 0 },
     { id: 160, name: "G22", isAvailable: true, valor: 0 },
   ],
-
   [
     { id: 0, name: "H", isAvailable: false, valor: null },
     { id: 1, name: "H", isAvailable: false, valor: null },
@@ -226,7 +223,6 @@ const assentos = [
     { id: 183, name: "H23", isAvailable: true, valor: 30.0 },
     { id: 184, name: "H24", isAvailable: true, valor: 30.0 },
   ],
-
   [
     { id: 0, name: "I", isAvailable: false, valor: null },
     { id: 0, name: "X", isAvailable: false, valor: null },
@@ -255,7 +251,6 @@ const assentos = [
     { id: 205, name: "I21", isAvailable: true, valor: 30.0 },
     { id: 206, name: "I22", isAvailable: true, valor: 30.0 },
   ],
-
   [
     { id: 0, name: "J", isAvailable: false, valor: null },
     { id: 1, name: "J", isAvailable: false, valor: null },
